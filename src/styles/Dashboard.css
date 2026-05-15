@@ -1,0 +1,812 @@
+@font-face {
+  font-family: "GDS Transport";
+  src:
+    url("/fonts/light-94a07e06a1-v2.woff2") format("woff2"),
+    url("/fonts/light-f591b13f7d-v2.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GDS Transport";
+  src:
+    url("/fonts/bold-b542beb274-v2.woff2") format("woff2"),
+    url("/fonts/bold-affa96571d-v2.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.dashboard-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px 60px;
+  font-family:
+    "GDS Transport",
+    Arial,
+    sans-serif;
+  color: #0b0c0c;
+}
+
+.dashboard-title {
+  margin: 48px 0 36px;
+  font-size: 40px;
+  line-height: 1.04167;
+  font-weight: 700;
+}
+
+.details-panel {
+  border-left: 1px solid #b1b4b6;
+  border-right: 1px solid #b1b4b6;
+  border-bottom: 1px solid #b1b4b6;
+  background: #ffffff;
+}
+
+.section-heading {
+  margin: 34px 0 18px;
+
+  font-size: 24px;
+  line-height: 1.11111;
+  font-weight: 700;
+}
+
+.details-content {
+  padding: 26px 20px 34px;
+}
+
+.summary-list {
+  width: 100%;
+}
+
+.summary-row {
+  display: grid;
+  grid-template-columns: 320px 1fr 80px;
+  column-gap: 34px;
+  padding: 10px 0;
+  border-bottom: 1px solid #b1b4b6;
+  align-items: start;
+  font-family:
+    "GDS Transport",
+    Arial,
+    sans-serif;
+  color:#0b0c0c;
+}
+.summary-list:last-child {
+  padding-bottom: 14px;
+}
+
+.summary-row.address-row {
+  padding-bottom: 20px;
+}
+.summary-key {
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 700;
+}
+
+.summary-value {
+  font-size: 19px;
+  line-height: 1.31579;
+  white-space: pre-line;
+  font-family:
+    "GDS Transport",
+    Arial,
+    sans-serif;
+  color:#0b0c0c;
+}
+
+.summary-actions {
+  text-align: right;
+}
+
+.change-link {
+  border: none;
+  background: none;
+  padding: 0;
+
+  color: #1d70b8;
+  cursor: pointer;
+
+  font-size: 19px;
+  line-height: 1.31579;
+  text-decoration: underline;
+}
+
+.change-link:hover {
+  color: #003078;
+}
+
+.edit-input,
+.edit-textarea {
+  width: 100%;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  font-size: 19px;
+  line-height: 1.31579;
+
+  font-family:
+    "GDS Transport",
+    Arial,
+    sans-serif;
+
+  color: #0b0c0c;
+
+  box-sizing: border-box;
+}
+
+.edit-input:focus,
+.edit-textarea:focus {
+  outline: 3px solid #fd0;
+  outline-offset: 2px;
+
+  background: #ffffff;
+}
+
+.edit-textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 19px;
+  line-height: 1.45;
+  font-family:
+    "GDS Transport",
+    Arial,
+    sans-serif;
+  color: #0b0c0c;
+  resize: none;
+  overflow: hidden;
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+/* .divider {
+  border: 0;
+  border-top: 1px solid #b1b4b6;
+  margin: 34px 0 28px;
+} */
+
+.tabs {
+  display: flex;
+  align-items: flex-end;
+
+  border-bottom: 1px solid #b1b4b6;
+
+  margin-bottom: 0;
+}
+
+.tab {
+  appearance: none;
+  border: none;
+
+  background: #f3f2f1;
+
+  padding: 14px 20px;
+
+  margin-right: 4px;
+
+  font-size: 19px;
+  line-height: 1.31579;
+
+  color: #0b0c0c;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.tab:hover {
+  background: #fd0;
+}
+
+.active-tab {
+  background: #ffffff;
+
+  text-decoration: none;
+
+  border-top: 1px solid #b1b4b6;
+  border-left: 1px solid #b1b4b6;
+  border-right: 1px solid #b1b4b6;
+
+  margin-bottom: -1px;
+
+  padding-bottom: 15px;
+}
+
+.active-tab:hover {
+  background: #ffffff;
+}
+
+.code-panel {
+  border-left: 1px solid #b1b4b6;
+  border-right: 1px solid #b1b4b6;
+  border-bottom: 1px solid #b1b4b6;
+
+  background: #ffffff;
+}
+
+.code-content {
+  padding: 26px 16px 42px;
+}
+
+.code-heading {
+  margin: 0 0 14px;
+
+  font-size: 24px;
+  line-height: 1.11111;
+  font-weight: 700;
+
+  letter-spacing: 0;
+
+  color: #0b0c0c;
+}
+
+.code-paragraph {
+  margin: 0 0 28px;
+
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+
+  color: #0b0c0c;
+
+  max-width: 880px;
+}
+
+.code-btn {
+  appearance: none;
+
+  border: none;
+
+  background: #00703c;
+  color: #ffffff;
+
+  font-size: 19px;
+  line-height: 1;
+  font-weight: 400;
+
+  padding: 11px 16px 13px;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 0 #002d18;
+
+  margin: 2px 0 46px;
+
+  min-width: auto;
+}
+
+.code-btn:hover {
+  background: #005a30;
+}
+
+.code-btn:focus {
+  outline: 3px solid #fd0;
+  outline-offset: 0;
+}
+
+.code-subheading {
+  margin: 0 0 16px;
+
+  font-size: 24px;
+  line-height: 1.11111;
+  font-weight: 700;
+
+  color: #0b0c0c;
+}
+
+.code-empty {
+  margin: 0 0 20px;
+
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 700;
+
+  color: #0b0c0c;
+}
+
+.code-empty:last-child {
+  margin-bottom: 0;
+}
+
+.penalties-panel {
+  border-left: 1px solid #b1b4b6;
+  border-right: 1px solid #b1b4b6;
+  border-bottom: 1px solid #b1b4b6;
+
+  background: #ffffff;
+}
+
+.penalties-content {
+  padding: 28px 18px 44px;
+}
+
+.penalties-heading {
+  margin: 0 0 24px;
+
+  font-size: 24px;
+  line-height: 1.11111;
+  font-weight: 700;
+
+  color: #0b0c0c;
+}
+
+.penalties-text {
+  margin: 0 0 34px;
+
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+
+  color: #0b0c0c;
+}
+
+.penalties-empty {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+
+  color: #0b0c0c;
+}
+
+.gov-link {
+  color: #1d70b8;
+  text-decoration: underline;
+}
+
+.gov-link:hover {
+  color: #003078;
+}
+
+.gov-link:focus {
+  background: #fd0;
+  color: #0b0c0c;
+  outline: none;
+  text-decoration: none;
+}
+
+/* ═══════════════════════════════════════
+   VEHICLES TAB
+   ═══════════════════════════════════════ */
+
+.vehicles-panel {
+  padding: 0;
+}
+
+.vehicles-content {
+  padding: 20px 30px;
+  border-left: 1px solid #b1b4b6;
+  border-right: 1px solid #b1b4b6;
+  border-bottom: 1px solid #b1b4b6;
+}
+
+.vehicles-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #0b0c0c;
+}
+
+.vehicles-text {
+  font-size: 16px;
+  margin: 0 0 16px;
+  color: #0b0c0c;
+}
+
+/* ── Show/Hide all ── */
+.hide-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1d70b8;
+  text-decoration: underline;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.hide-all-btn:hover {
+  color: #003078;
+}
+
+/* ── Accordion group ── */
+.vehicle-group {
+  padding: 28px 0 4px;
+  border-top: 1px solid #b1b4b6;
+}
+
+.vehicle-group:last-child {
+  border-bottom: 1px solid #b1b4b6;
+}
+
+/* ── Group header ── */
+.vehicle-group-header {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 18px;
+
+  margin-bottom: 22px;
+}
+
+.vehicle-group-info {
+  flex: 1;
+}
+
+.vehicle-group-icon {
+  width: 60px;
+  height: 38px;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-top: 2px;
+}
+
+.vehicle-header-content {
+  flex: 1;
+}
+
+.vehicle-group-title {
+  margin: 0 0 6px;
+
+  font-size: 19px;
+  line-height: 1.1;
+  font-weight: 700;
+
+  color: #0b0c0c;
+}
+
+.vehicle-category {
+  margin: 0 0 14px;
+
+  font-size: 19px;
+  line-height: 1.35;
+
+  color: #505a5f;
+}
+
+.vehicle-item {
+  display: grid;
+
+  grid-template-columns: 74px 1fr;
+
+  column-gap: 30px;
+
+  padding: 26px 0 34px;
+
+  border-top: 1px solid #d8d8d8;
+}
+
+.vehicle-item-content {
+  width: 100%;
+}
+.vehicle-main-row {
+  display: grid;
+
+  grid-template-columns: 170px 1fr;
+
+  column-gap: 44px;
+
+  margin-bottom: 22px;
+}
+
+.vehicle-code {
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 700;
+
+  color: #0b0c0c;
+}
+
+.vehicle-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1d70b8;
+  text-decoration: underline;
+  padding: 0;
+}
+.vehicle-toggle:hover {
+  color: #003078;
+}
+
+.accordion-icon {
+  flex-shrink: 0;
+}
+
+/* ── Expanded details ── */
+.vehicle-details {
+  padding-bottom: 16px;
+}
+
+/* ── Individual item row ── */
+.vehicle-row {
+  display: flex;
+  gap: 14px;
+  padding: 10px 0;
+  border-top: 1px solid #868685;
+}
+
+/* Left: icon */
+.vehicle-row-icon-wrap {
+  width: 60px;
+  height: 38px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.vehicle-row-icon {
+  width: 60px;
+  height: 38px;
+  object-fit: contain;
+}
+
+/* Right: body */
+.vehicle-row-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* ── Info row: label + value side by side ── */
+.vehicle-info-row {
+  display: grid;
+
+  grid-template-columns: 170px 1fr;
+
+  column-gap: 44px;
+
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+}
+
+
+/* ── Labels (Category X:, Restrictions:, You can drive:) ── */
+.vehicle-label {
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 700;
+
+  color: #0b0c0c;
+}
+
+/* ── Valid dates ── */
+.vehicle-valid {
+  margin-bottom: 26px;
+
+  font-size: 19px;
+  line-height: 1.45;
+
+  color: #0b0c0c;
+}
+
+.vehicle-valid div {
+  margin-bottom: 4px;
+}
+
+.vehicle-valid strong {
+  font-weight: 700;
+}
+/* ── Restrictions ── */
+.vehicle-restrictions{
+  font-size: 19px;
+  line-height: 1.5;
+
+  color: #0b0c0c;
+}
+
+.vehicle-drive-content {
+  max-width: 640px;
+}
+
+.vehicle-restrictions div {
+  margin-bottom: 4px;
+}
+
+
+/* ── Textarea: auto-height, no scroll ── */
+.vehicle-info-row--drive {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.vehicle-info-row--drive .vehicle-label {
+  padding-top: 2px;
+}
+
+.vehicle-icon {
+  width: 60px;
+  height: 38px;
+
+  min-width: 60px;
+  min-height: 60px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+.vehicle-textarea {
+  width: 100%;
+
+  min-height: 118px;
+  max-height: 700px;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  resize: none;
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  color: #0b0c0c;
+
+  font-family:
+    "GDS Transport",
+    arial,
+    sans-serif;
+
+  font-size: 19px;
+  line-height: 1.45;
+  font-weight: 400;
+
+  white-space: pre-wrap;
+}
+
+.vehicle-textarea:focus {
+  outline: 3px solid #fd0;
+  outline-offset: 2px;
+
+  background: #ffffff;
+}
+
+.vehicle-textarea::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fallback for browsers without field-sizing */
+@supports not (field-sizing: content) {
+  .vehicle-textarea {
+    height: auto;
+    min-height: 44px;
+    overflow-y: hidden;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .vehicle-info-row {
+    grid-template-columns: 1fr;
+    gap: 2px 0;
+  }
+  .vehicle-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .penalties-content {
+    padding: 22px 14px 34px;
+  }
+
+  .penalties-heading {
+    font-size: 27px;
+  }
+
+  .penalties-text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .penalties-empty {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+@media (max-width: 768px) {
+  .code-content {
+    padding: 22px 14px 34px;
+  }
+
+  .code-heading,
+  .code-subheading {
+    font-size: 27px;
+    line-height: 1.11111;
+  }
+
+  .code-paragraph {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .code-empty {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+
+  .code-btn {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .code-content {
+    padding: 22px 14px 30px;
+  }
+
+  .code-heading,
+  .code-subtitle {
+    font-size: 27px;
+    line-height: 1.11111;
+  }
+
+  .code-text,
+  .code-empty,
+  .code-btn {
+    font-size: 16px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 36px;
+    line-height: 1.11111;
+  }
+
+  .section-heading {
+    font-size: 27px;
+    line-height: 1.11111;
+  }
+
+  .summary-row {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .summary-actions {
+    text-align: left;
+  }
+
+  .summary-key,
+  .summary-value,
+  .change-link,
+  .edit-input,
+  .edit-textarea {
+    font-size: 16px;
+  }
+}
+
+.vehicle-richtext {
+  outline: none;
+  white-space: pre-wrap;
+}
+
+.vehicle-richtext:focus {
+  outline: 3px solid #fd0;
+  outline-offset: 2px;
+  background: #fff;
+}

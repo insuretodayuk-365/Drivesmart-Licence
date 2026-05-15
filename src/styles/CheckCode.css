@@ -1,0 +1,144 @@
+.checkcode-heading {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.intro-panel {
+  background: white;
+  border: 1px solid #b1b4b6;
+  padding: 28px;
+  margin-bottom: 30px;
+}
+
+.generate-card {
+  background: white;
+  border: 1px solid #b1b4b6;
+  padding: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.generate-btn {
+  background-color: #00703c !important;
+  box-shadow: 0 2px 0 #002d18 !important;
+}
+
+.generate-btn:hover {
+  background-color: #005a30 !important;
+}
+
+.code-display {
+  margin-top: 30px;
+}
+
+.generated-code {
+  background: #0b0c0c;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 320px;
+  border-radius: 6px;
+}
+
+.expiry-text {
+  color: #505a5f;
+}
+
+.history-card {
+  background: white;
+  border: 1px solid #b1b4b6;
+  padding: 28px;
+  margin-bottom: 30px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d8d8d8;
+  padding: 20px 0;
+}
+
+.history-item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.history-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-code {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1d70b8;
+  letter-spacing: 2px;
+}
+
+.history-date {
+  color: #505a5f;
+  font-size: 14px;
+}
+
+.expiry-pill {
+  background: #d4f4dd;
+  color: #005a30;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.security-panel {
+  border-left: 8px solid #1d70b8;
+  background: #f3f2f1;
+  padding: 24px;
+}
+
+.empty-history {
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .history-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .generated-code {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    max-width: 100%;
+  }
+
+  .checkcode-heading {
+    font-size: 2rem !important;
+  }
+
+  .generate-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkcode-heading {
+    font-size: 1.7rem !important;
+  }
+
+  .intro-panel,
+  .generate-card,
+  .history-card {
+    padding: 20px;
+  }
+
+  .generated-code {
+    font-size: 1.2rem;
+    padding: 16px;
+  }
+}
