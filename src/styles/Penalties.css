@@ -176,3 +176,64 @@
     padding: 14px 16px;
   }
 }
+
+@media (max-width: 375px) {
+  .penalties-heading {
+    font-size: 1.4rem !important;
+    margin-bottom: 16px;
+  }
+
+  .status-overview {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .overview-card {
+    padding: 16px;
+  }
+
+  .overview-number {
+    font-size: 1.8rem;
+  }
+
+  .overview-status {
+    font-size: 1.1rem;
+  }
+
+  .overview-label {
+    font-size: 13px;
+  }
+
+  .penalty-card,
+  .disqualification-card {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .penalty-item {
+    padding: 16px 0;
+  }
+
+  .points-badge {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .detail-row {
+    margin-bottom: 8px;
+  }
+
+  .detail-label,
+  .detail-value {
+    font-size: 14px;
+  }
+
+  .green-banner {
+    padding: 12px 12px;
+    gap: 8px;
+  }
+
+  .warning-panel {
+    padding: 16px;
+  }
+}

@@ -1,4 +1,4 @@
-.checkcode-heading {
+/* .checkcode-heading {
   margin-top: 20px;
   margin-bottom: 24px;
 }
@@ -142,3 +142,31 @@
     padding: 16px;
   }
 }
+
+@media (max-width: 375px) {
+  .checkcode-heading {
+    font-size: 1.5rem !important;
+  }
+
+  .intro-panel,
+  .generate-card,
+  .history-card {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .generated-code {
+    font-size: 1rem;
+    padding: 12px;
+    letter-spacing: 2px;
+  }
+
+  .history-item {
+    padding: 16px 0;
+  }
+
+  .generate-btn {
+    font-size: 1rem !important;
+    padding: 10px 16px !important;
+  }
+} */
