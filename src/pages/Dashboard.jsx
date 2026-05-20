@@ -361,6 +361,7 @@ function Dashboard() {
                           <textarea
                             className="edit-textarea"
                             value={data[field.key]}
+                            spellCheck={false}
                             onChange={(e) =>
                               handleChange(field.key, e.target.value)
                             }
@@ -370,6 +371,7 @@ function Dashboard() {
                             className="edit-input"
                             type="text"
                             value={data[field.key]}
+                            spellCheck={false}
                             onChange={(e) =>
                               handleChange(field.key, e.target.value)
                             }
