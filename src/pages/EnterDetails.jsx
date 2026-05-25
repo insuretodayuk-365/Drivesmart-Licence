@@ -87,7 +87,7 @@ function EnterDetails() {
               licence.
             </p>
             <p className="govuk-body">
-              Use a different service if you want to
+              Use a different service if you want to{" "}
               <a href="/" className="govuk-link">
                 check someone else’s driving licence information
               </a>
@@ -276,10 +276,10 @@ function EnterDetails() {
               Do you share your driving licence regularly?
             </h2>
             <p className="govuk-body support-copy">
-              Sign in to your
+              Sign in to your{" "}
               <a href="/" className="govuk-link">
                 driver and vehicles account
-              </a>
+              </a>{" "}
               to get a check code quickly and easily without needing to verify
               your identity.
             </p>
