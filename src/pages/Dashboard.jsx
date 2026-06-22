@@ -7,6 +7,7 @@ import lightIcon from "../assets/light.png";
 import carsIcon from "../assets/cars.png";
 import carBIcon from "../assets/car_cat_b.png";
 import carBEIcon from "../assets/car_cat_be.png";
+import Penalties from "./Penalties";
 
 function Dashboard() {
   const savedData = JSON.parse(localStorage.getItem("licenceData")) || {};
@@ -850,27 +851,7 @@ function Dashboard() {
           )}
           {activeTab === "penalties" && (
             <div className="penalties-panel">
-              <div className="penalties-content">
-                <h2 className="penalties-heading">
-                  Penalties and disqualifications
-                </h2>
-
-                <p className="penalties-text">
-                  For more information go to the{" "}
-                  <a href="/" className="gov-link">
-                    penalty points
-                  </a>{" "}
-                  and{" "}
-                  <a href="/" className="gov-link">
-                    disqualification
-                  </a>{" "}
-                  sections on GOV.UK.
-                </p>
-
-                <p className="penalties-empty">
-                  You do not have any penalties and disqualifications.
-                </p>
-              </div>
+              <Penalties />
             </div>
           )}
 
